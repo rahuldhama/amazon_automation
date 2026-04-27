@@ -16,41 +16,37 @@ Ensure you have the following installed on your machine:
 
 ## 🚀 Setup & Installation Instructions
 
-1. Clone the repository
-bash
-git clone (https://github.com/rahuldhama/amazon_automation.git)
-cd amazon_automation
+**1. Clone the repository**
+- git clone `(https://github.com/rahuldhama/amazon_automation.git)`
+-`cd amazon_automation`
 
 **2. Create a virtual environment**
 
-Bash
-python -m venv venv
+`python -m venv venv`
 
 **3. Activate the virtual environment**
 
-Windows (Command Prompt): venv\Scripts\activate.bat
+Windows (Command Prompt): `venv\Scripts\activate.bat`
+Windows (PowerShell): `\venv\Scripts\activate`
+Mac/Linux: `source venv/bin/activate`
 
-Windows (PowerShell): .\venv\Scripts\activate
+**4. Install project dependencies**
 
-Mac/Linux: source venv/bin/activate
+`pip install -r requirements.txt`
 
-4. Install project dependencies
+**5. Install Playwright browsers**
 
-Bash
-pip install -r requirements.txt
-5. Install Playwright browsers
+`playwright install chromium`
 
-Bash
-playwright install chromium
-▶️ Running the Tests
+**▶️ Running the Tests**
+
 To run the test cases in parallel (simultaneously) with the browser visible, run the following command:
 
-Bash
-python -m pytest -n 2 --headed
+`python -m pytest -n 2 --headed`
+
 To view the detailed print logs upon completion:
 Because the parallel runner hides real-time console output, append the -rP flag to see the [SUCCESS] logs after the test finishes.
 
-Bash
-python -m pytest -n 2 --headed -rP
-⚠️ Known Constraints (Real-World Web Scraping)
-Amazon actively deploys enterprise anti-bot mechanisms (e.g., CAPTCHAs, dynamic DOM manipulation, and shadow elements). This script uses dynamic locators and degrades gracefully if Amazon flags the headless browser session. In a production CI/CD environment, this would be mitigated using residential proxies or stealth plugins.
+`python -m pytest -n 2 --headed -rP`
+
+
