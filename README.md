@@ -7,7 +7,6 @@ This project fulfills all assessment requirements, including **parallel executio
 ## 📁 Project Structure
 - `tests/test_amazon.py`: Contains the core automation logic and Pytest configurations.
 - `requirements.txt`: Lists the Python dependencies required to run the project.
-- `*_cart_proof.png`: Automated screenshots verifying the script reached the final cart state.
 
 ## ⚙️ Prerequisites
 Ensure you have the following installed on your machine:
