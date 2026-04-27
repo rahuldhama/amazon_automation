@@ -16,16 +16,17 @@ Ensure you have the following installed on your machine:
 
 ## 🚀 Setup & Installation Instructions
 
-**1. Clone the repository**
-```bash
+1. Clone the repository
+bash
 git clone (https://github.com/rahuldhama/amazon_automation.git)
 cd amazon_automation
 
-2. Create a virtual environment
+**2. Create a virtual environment**
 
 Bash
 python -m venv venv
-3. Activate the virtual environment
+
+**3. Activate the virtual environment**
 
 Windows (Command Prompt): venv\Scripts\activate.bat
 
